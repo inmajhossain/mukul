@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import Header from "@/components/layout-components/header/Header";
 
 const inter = localFont({
   src: "../fonts/InterFont.ttf",
@@ -11,6 +12,12 @@ const manrope = localFont({
   src: "../fonts/ManropeFont.ttf",
   // Weight: "400, 500, 600, 700, 800",
   variable: "--font-manrope",
+});
+
+const lobster = localFont({
+  src: "../fonts/Lobster.ttf",
+  // Weight: "400, 500, 600, 700, 800",
+  variable: "--font-lobster",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${manrope.variable} antialiased`}>
+      <body
+        className={`${inter.className} ${manrope.variable} ${lobster.variable} antialiased`}
+      >
+        <Header />
         {children}
       </body>
     </html>
