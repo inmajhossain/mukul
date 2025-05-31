@@ -4,12 +4,12 @@ import localFont from "next/font/local";
 
 const inter = localFont({
   src: "../fonts/InterFont.ttf",
-  Weight: "400, 500, 600, 700, 800",
+  // Weight: "400, 500, 600, 700, 800",
 });
 
 const manrope = localFont({
   src: "../fonts/ManropeFont.ttf",
-  Weight: "400, 500, 600, 700, 800",
+  // Weight: "400, 500, 600, 700, 800",
   variable: "--font-manrope",
 });
 
