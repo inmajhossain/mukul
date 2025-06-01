@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Header from "@/components/layout-components/header/Header";
+import Footer from "@/components/layout-components/footer/Footer";
 
 const inter = localFont({
   src: "../fonts/InterFont.ttf",
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

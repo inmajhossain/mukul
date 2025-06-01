@@ -30,9 +30,31 @@ const Header: React.FC = () => {
     <header className="relative flex justify-between items-center bg-slate-100 w-full h-[64px]">
       <div className="flex flex-row justify-between items-center w-full container-new">
         {/* Name */}
-        <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
+        {/* <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
+          Mukul Ahmed
+        </h3> */}
+        <h3
+          className="bg-clip-text font-lobster font-semibold text-[24px] text-transparent"
+          style={{
+            backgroundImage:
+              "linear-gradient(90deg, #ff7f00,  #4b0082, #ff7f00, #4b0082, #9400d3, #ff7f00,)",
+            backgroundSize: "800% 800%",
+            animation: "rainbow 8s linear infinite",
+          }}
+        >
           Mukul Ahmed
         </h3>
+
+        <style jsx global>{`
+          @keyframes rainbow {
+            0% {
+              background-position: 0%;
+            }
+            100% {
+              background-position: 100%;
+            }
+          }
+        `}</style>
         {/* Navigarion */}
         <div className="hidden lg:block">
           <Navbar />

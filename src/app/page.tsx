@@ -1,6 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Body } from "@/components/body-components/Body";
 
 export default function Home() {
-  return <div className="mx-auto text-center custom-container"></div>;
+  return (
+    <div className="mx-auto text-center custom-container">
+      <Body />
+    </div>
+  );
 }
