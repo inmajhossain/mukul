@@ -1,4 +1,4 @@
-import { Body, Hero } from "@/components/body-components/Hero";
+import { Hero } from "@/components/body-components/Hero";
 
 export default function Home() {
   return (
