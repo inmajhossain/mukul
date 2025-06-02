@@ -27,13 +27,13 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="relative flex justify-between items-center bg-slate-100 w-full h-[64px]">
+    <header className="relative flex justify-between items-center bg-white w-full h-[64px]">
       <div className="flex flex-row justify-between items-center w-full container-new">
         {/* Name */}
-        {/* <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
+        <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
           Mukul Ahmed
-        </h3> */}
-        <h3
+        </h3>
+        {/* <h3
           className="bg-clip-text font-lobster font-semibold text-[24px] text-transparent"
           style={{
             backgroundImage:
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
               background-position: 100%;
             }
           }
-        `}</style>
+        `}</style> */}
         {/* Navigarion */}
         <div className="hidden lg:block">
           <Navbar />
