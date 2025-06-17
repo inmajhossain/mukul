@@ -2,7 +2,7 @@ import React from "react";
 import {  PiStarFourFill } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
-import ak1 from "@/images/hero.jpeg"
+import ak11 from "@/images/hero.jpeg"
 
 
 
@@ -53,7 +53,7 @@ export const About = () => {
   </div>
   {/* Right */}
   <div>
-    <Image src={ak1} alt="About-Image" width={600} height={500} className="w-[350px] h-[240px] md:w-[520px] md:h-[380px] rounded-[8px]  drop-shadow-black shadow-xl bg-cover object-cover" />
+    <Image src={ak11} alt="About-Image" width={600} height={500} className="w-[350px] h-[240px] md:w-[520px] md:h-[380px] rounded-[8px]  drop-shadow-black shadow-xl bg-cover object-cover" />
 
   </div>
 </div>
