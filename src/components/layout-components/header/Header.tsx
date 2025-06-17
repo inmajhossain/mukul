@@ -84,9 +84,9 @@ const Header: React.FC = () => {
         {isNavOpen && (
           <motion.div
             key="mobile-nav"
-            initial={{ translateY: -20, opacity: 0 }}
-            animate={{ translateY: 0, opacity: 1 }}
-            exit={{ translateY: -20, opacity: 0 }}
+            initial={{ y : -20, opacity: 0 }}
+            animate={{ y : 0, opacity: 1 }}
+            exit={{ y : -20, opacity: 0 }}
             transition={{
               duration: 0.5,
               ease: "easeInOut",
