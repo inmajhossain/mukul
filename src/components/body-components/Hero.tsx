@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <div className="bg-[url(/images/hero.jpeg)] bg-cover bg-no-repeat bg-center mt-[-80px] lg:mt-[-40px] mb-[200px] md:w-full lg:w-screen h-screen object-bottom object-cover">
+    <div className="bg-[url(/images/hero.jpeg)] bg-cover bg-no-repeat bg-center mt-[-80px] lg:mt-[-40px] md:w-full lg:w-screen h-screen object-bottom object-cover">
       <div className="bg-[#656565]/60 h-screen">
         <div className="flex flex-col justify-around items-start space-y-[25px] px-[40px] lg:px-[150px] py-[220px] font-bold text-white text-left">
           <motion.h1
