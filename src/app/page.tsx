@@ -1,9 +1,11 @@
 import { Hero } from "@/components/body-components/Hero";
+import Innovative from "@/components/body-components/Innovative";
 
 export default function Home() {
   return (
-    <div className="mx-auto text-center custom-container">
+    <div className="flex flex-col gap-[100px] mx-auto text-center custom-container">
       <Hero />
+      <Innovative />
     </div>
   );
 }
