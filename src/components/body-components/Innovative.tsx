@@ -78,3 +78,12 @@ const Innovative = () => {
 };
 
 export default Innovative;
+
+// const number = [1, 2, 3, 4, 5];
+// const answer = number.find(function (value) {
+//   if (value >= 3) {
+//     return true;
+//   }
+// });
+
+// console.log(answer);
