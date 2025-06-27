@@ -28,7 +28,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="relative flex justify-between items-center bg-white w-full h-[64px]">
-      <div className="flex flex-row justify-between items-center w-full container-new">
+      <div className="flex flex-row justify-between items-center backdrop-blur-3xl w-full container-new">
         {/* Name */}
         <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
           Mukul Ahmed
@@ -84,9 +84,9 @@ const Header: React.FC = () => {
         {isNavOpen && (
           <motion.div
             key="mobile-nav"
-            initial={{ y : -20, opacity: 0 }}
-            animate={{ y : 0, opacity: 1 }}
-            exit={{ y : -20, opacity: 0 }}
+            initial={{ y: -20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
             transition={{
               duration: 0.5,
               ease: "easeInOut",

@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useInView } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
 import { PiStarFourFill } from "react-icons/pi";
+import Link from "next/link";
 
 type PortfolioItem = {
   id: number;
@@ -30,202 +31,168 @@ const portfolioItems: PortfolioItem[] = [
     client: "ShopEasy Inc.",
     year: "2024",
     technologies: ["Figma", "Adobe XD", "Prototyping"],
-    liveUrl: "https://example.com/ecommerce-app",
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 102,
-    title: "Banking Dashboard",
+    title: "Nabu Need Baby Ecom",
     description:
-      "Building user-friendly and secure online banking experiences with modern design principles.",
-    image: "/images/portfolio/banking-dashboard.jpg",
+      "Creating visually appealing e-commerce websites for baby products.",
+    image: "/images/work/ui2.webp",
     category: "UI/UX Design",
-    client: "SecureBank",
+    client: "Baby Ecommerce",
     year: "2024",
     technologies: ["Sketch", "InVision", "User Research"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 103,
-    title: "Healthcare Platform",
-    description:
-      "Designing comprehensive websites for diverse healthcare businesses and medical practices.",
-    image: "/images/portfolio/healthcare-ui.jpg",
+    title: "Webcam Model UI Design",
+    description: "Designing modern interfaces for webcam model websites.",
+    image: "/images/work/ui3.webp",
     category: "UI/UX Design",
     client: "MedCare Solutions",
     year: "2023",
     technologies: ["Figma", "Adobe Illustrator"],
-  },
-  {
-    id: 104,
-    title: "Food Delivery App",
-    description:
-      "Showcasing professional skills and personal brand through custom portfolio design.",
-    image: "/images/portfolio/food-delivery.jpg",
-    category: "UI/UX Design",
-    client: "QuickBite",
-    year: "2023",
-    technologies: ["Figma", "Principle"],
-  },
-  {
-    id: 101,
-    image: "/images/work/ui1.webp",
-    title: "House Cleaning UI Design",
-    description:
-      "Designing user-friendly interfaces for house cleaning services.",
-    category: "UI/UX Design",
-    client: "ShopEasy Inc.",
-    year: "2024",
-    technologies: ["Figma", "Adobe XD", "Prototyping"],
-    liveUrl: "https://example.com/ecommerce-app",
-  },
-  {
-    id: 102,
-    title: "Banking Dashboard",
-    description:
-      "Building user-friendly and secure online banking experiences with modern design principles.",
-    image: "/images/portfolio/banking-dashboard.jpg",
-    category: "UI/UX Design",
-    client: "SecureBank",
-    year: "2024",
-    technologies: ["Sketch", "InVision", "User Research"],
-  },
-  {
-    id: 103,
-    title: "Healthcare Platform",
-    description:
-      "Designing comprehensive websites for diverse healthcare businesses and medical practices.",
-    image: "/images/portfolio/healthcare-ui.jpg",
-    category: "UI/UX Design",
-    client: "MedCare Solutions",
-    year: "2023",
-    technologies: ["Figma", "Adobe Illustrator"],
-  },
-  {
-    id: 104,
-    title: "Food Delivery App",
-    description:
-      "Showcasing professional skills and personal brand through custom portfolio design.",
-    image: "/images/portfolio/food-delivery.jpg",
-    category: "UI/UX Design",
-    client: "QuickBite",
-    year: "2023",
-    technologies: ["Figma", "Principle"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
 
   // Web Development Projects
   {
     id: 201,
-    title: "Corporate Website",
+    title: "Pizza Mama",
     description:
-      "Designing and developing responsive websites for the business industry with modern approach.",
-    image: "/images/portfolio/corporate-website.jpg",
+      "Designing and developing responsive websites for the food industry.",
+    image: "/images/work/webdev1.webp",
     category: "Web Development",
-    client: "BusinessPro Consulting",
+    client: "Pizza Mama",
     year: "2024",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    liveUrl: "https://example.com/corporate-site",
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 202,
-    title: "Restaurant Chain",
+    title: "E-commerce Website",
     description:
-      "Building user-friendly and secure online food ordering experiences for restaurant chains.",
-    image: "/images/portfolio/restaurant-website.jpg",
+      "Building user-friendly and secure online shopping experiences.",
+    image: "/images/work/webdev2.webp",
     category: "Web Development",
-    client: "Tasty Bites Chain",
+    client: "Emily Davis",
     year: "2024",
     technologies: ["React", "Node.js", "MongoDB"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 203,
-    title: "Real Estate Platform",
+    title: "Personal Portfolio",
     description:
-      "Developing comprehensive websites for diverse real estate businesses and property listings.",
-    image: "/images/portfolio/realestate-platform.jpg",
+      "Showcasing professional skills and personal brand through custom portfolios.",
+    image: "/images/work/webdev3.webp",
     category: "Web Development",
-    client: "PrimeProperties",
-    year: "2023",
-    technologies: ["Vue.js", "Laravel", "MySQL"],
+    client: "John Anderson",
+    year: "2024",
+    technologies: ["Next.js", "Laravel", "MySQL"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 204,
-    title: "Tech Startup Landing",
+    title: "Omni food Website",
     description:
-      "Showcasing professional skills through custom landing page development for tech startups.",
-    image: "/images/portfolio/tech-startup.jpg",
+      "Developing comprehensive websites for diverse food-related businesses.",
+    image: "/images/work/webdev4.webp",
     category: "Web Development",
-    client: "InnovateTech",
-    year: "2023",
+    client: "Omni",
+    year: "2025",
     technologies: ["React", "Framer Motion", "Tailwind"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
 
   // WordPress Development Projects
   {
     id: 301,
-    title: "News Portal",
+    title: "Spotless4U Cleaning Services Website",
     description:
-      "Designing and developing responsive news websites with advanced content management systems.",
-    image: "/images/portfolio/news-portal.jpg",
+      "Designed and developed a custom WordPress website for Spotless4U Cleaning Services.",
+    image: "/images/work/wordpress1.webp",
     category: "WordPress Development",
-    client: "Daily News Network",
+    client: "Spotless4U Cleaning Services",
     year: "2024",
     technologies: ["WordPress", "PHP", "Custom Plugins"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 302,
-    title: "E-learning Platform",
+    title: "Usa Corporation Services Website",
     description:
-      "Building user-friendly and secure online learning experiences with course management.",
-    image: "/images/portfolio/elearning-platform.jpg",
+      "Designed and developed a custom WordPress website for USA Corporation Services.",
+    image: "/images/work/wordpress2.webp",
     category: "WordPress Development",
-    client: "EduTech Solutions",
+    client: "Usa Corporation",
     year: "2024",
     technologies: ["WordPress", "LearnDash", "WooCommerce"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 303,
-    title: "Photography Portfolio",
+    title: "Skin Supply Products Website",
     description:
-      "Developing comprehensive websites for diverse photography businesses and creative professionals.",
-    image: "/images/portfolio/photography-portfolio.jpg",
+      "Designed and developed a custom WordPress website for Skin Supply Products.",
+    image: "/images/work/wordpress3.webp",
     category: "WordPress Development",
-    client: "John Doe Photography",
-    year: "2023",
+    client: "Skin Supply Products",
+    year: "2025",
     technologies: ["WordPress", "Custom Theme", "Gallery"],
-  },
-  {
-    id: 304,
-    title: "Non-Profit Website",
-    description:
-      "Showcasing professional skills through custom WordPress development for non-profit organizations.",
-    image: "/images/portfolio/nonprofit-site.jpg",
-    category: "WordPress Development",
-    client: "Hope Foundation",
-    year: "2023",
-    technologies: ["WordPress", "Custom Plugins", "PayPal"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
 
   // Website SEO Projects
   {
     id: 401,
-    title: "E-commerce SEO Campaign",
+    title: "FunParty Lab SEO Optimization",
     description:
-      "Designing and developing SEO strategies for online retail businesses to boost organic traffic.",
-    image: "/images/portfolio/ecommerce-seo.jpg",
+      "Boosting organic search rankings through strategic keyword optimization and content refinement.",
+    image: "/images/work/webseo1.webp",
     category: "Website SEO",
     client: "Online Store Plus",
-    year: "2024",
+    year: "2025",
     technologies: ["Google Analytics", "SEMrush", "Technical SEO"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
   {
     id: 402,
-    title: "Local Business SEO",
+    title: "FunParty Lab SEO Optimization",
     description:
-      "Building user-friendly and secure local SEO strategies for small businesses and practices.",
-    image: "/images/portfolio/local-seo.jpg",
+      "Boosting organic search rankings through strategic keyword optimization and content refinement.",
+    image: "/images/work/webseo2.webp",
     category: "Website SEO",
-    client: "Smile Dental Clinic",
+    client: "Wrangler Australia",
     year: "2024",
     technologies: ["Google My Business", "Local Citations"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
+  },
+  {
+    id: 403,
+    title: "Wrangler SEO Result",
+    description:
+      "Driving organic traffic growth and boosting keyword rankings for Wrangler’s Australian catalog.",
+    image: "/images/work/webseo3.webp",
+    category: "Website SEO",
+    client: "Mediavinec",
+    year: "2024",
+    technologies: ["Google My Business", "Local Citations"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
+  },
+  {
+    id: 404,
+    title: "Local SEO & Organic Traffic Growth",
+    description:
+      "Enhancing local visibility and driving organic traffic growth through targeted SEO strategies.",
+    image: "/images/work/webseo4.webp",
+    category: "Website SEO",
+    client: "WebSEO4",
+    year: "2025",
+    technologies: ["Google My Business", "Local Citations"],
+    liveUrl: "https://www.facebook.com/inmajhossainshahin/",
   },
 
   // Graphic Design Projects
@@ -286,7 +253,7 @@ const Work = () => {
             transition={{ duration: 1, ease: "easeIn" }}
             className="flex flex-row items-center gap-[5px] font-semibold"
           >
-            <PiStarFourFill className="text-primary" /> Our Portfolio
+            <PiStarFourFill className="text-primary" /> Our Work
           </motion.h6>
           <motion.h2
             initial={{ opacity: 0, x: -50 }}
@@ -294,7 +261,7 @@ const Work = () => {
             transition={{ duration: 1, ease: "easeIn" }}
             className="text-[36px] md:text-[48px] medium"
           >
-            Our amazing <span className="text-primary">projects</span>
+            Our Work <span className="text-primary">masterpieces</span>
           </motion.h2>
         </div>
         <div>
@@ -368,7 +335,7 @@ const Work = () => {
                       className="p-[20px] rounded-t-[30px] object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 group-hover:bg-black/10 transition-all duration-300" />
-                    <div className="top-4 left-4 absolute">
+                    <div className="top-7 left-7 absolute">
                       <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-gray-700 text-xs">
                         {item.category}
                       </span>
@@ -401,10 +368,14 @@ const Work = () => {
                     )}
 
                     {/* Action Button */}
-                    <button className="group/btn flex justify-around items-center gap-2 bg-primary hover:bg-black mt-[30px] px-4 py-3 rounded-full w-[160px] font-medium text-white transition-all duration-300">
+                    <Link
+                      href={item.liveUrl || "#"}
+                      passHref
+                      className="group/btn flex justify-around items-center gap-2 bg-primary hover:bg-black mt-[30px] px-4 py-3 rounded-full w-[160px] font-medium text-white transition-all duration-300"
+                    >
                       View Project
                       <FaArrowRight className="transition-transform group-hover/btn:translate-x-1" />
-                    </button>
+                    </Link>
                   </div>
                 </motion.div>
               ))}

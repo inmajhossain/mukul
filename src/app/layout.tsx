@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import Header from "@/components/layout-components/header/Header";
 import Footer from "@/components/layout-components/footer/Footer";
 
-
 const inter = localFont({
   src: "../fonts/InterFont.ttf",
   // Weight: "400, 500, 600, 700, 800",
@@ -36,8 +35,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} ${manrope.variable} ${lobster.variable} antialiased`}
-      > 
-      
+      >
         <Header />
         {children}
         <Footer />
@@ -46,4 +44,4 @@ export default function RootLayout({
   );
 }
 
-//  bg-gradient-animate top-0 left-0 w-full h-full  bg-gradient-animate 
+//  bg-gradient-animate top-0 left-0 w-full h-full  bg-gradient-animate

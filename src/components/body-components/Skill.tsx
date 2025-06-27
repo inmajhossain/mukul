@@ -165,7 +165,7 @@ export const Skill = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1.5, ease: "easeIn" }}
-            className="flex flex-row items-center gap-[20px] bg-slate-100 shadow-black drop-shadow-[20px] mx-auto px-[10px] py-[10px] border-[1px] border-black rounded-[10px] w-[360px] lg:w-[298px] h-[130px] md:h-auto text-center hover:scale-105 transition-all duration-500 ease-in"
+            className="flex flex-row items-center gap-[20px] bg-slate-100 shadow-black drop-shadow-[20px] mx-auto px-[10px] py-[10px] border-[1px] border-black rounded-[10px] w-[360px] md:max-w-[360px] lg:max-w-[298px] h-[130px] md:h-auto text-center hover:scale-105 transition-all duration-500 ease-in"
           >
             <div className="bg-slate-50 hover:bg-slate-200 p-[10px] rounded-[5px]">
               <Image
