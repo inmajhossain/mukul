@@ -108,24 +108,26 @@ export const ServiceInfo = () => {
 
   return (
     
-      <div ref={ref} className="flex md:flex-row flex-col md:flex-wrap justify-between items-center gap-[15px] gap-y-[20px] container-new">
+      <div ref={ref}  className="flex md:flex-row flex-col md:flex-wrap justify-between items-center gap-[15px] gap-y-[20px] container-new">
         {Serviceinfo.map((member, index) => (
           <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 1, ease: "easeIn" }}
+            
             className="flex flex-col items-start space-y-[20px] bg-slate-50 shadow-black drop-shadow-[10px] mx-auto p-[20px] border-[1px] border-slate-100 rounded-[20px] w-[360px] md:w-[350px] lg:w-[390px] h-[580px] text-center hover:scale-105 transition-all duration-500 ease-in"
           >
             
               <div className="space-y-[20px] mx-auto min-h-[470px]">
-                <Image
+                <motion.div  key={index}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 1, ease: "easeIn" }}>
+                  <Image
                 src={member.src}
                 alt={member.title}
                 width={290}
                 height={330}
                 className="mx-auto border-2 border-primary rounded-[20px] w-[350px] h-[255px] object-cover"
               />
+                </motion.div>
               <h5 className="font-bold text-[18px] text-black text-left">
                 {member.title}
               </h5>

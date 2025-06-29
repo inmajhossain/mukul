@@ -17,7 +17,7 @@ export default function FooterInfo() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: false, // allow re-trigger
-    threshold: 0.3, // trigger when 50% in view
+    threshold: 0.2, // trigger when 50% in view
   });
 
   useEffect(() => {
