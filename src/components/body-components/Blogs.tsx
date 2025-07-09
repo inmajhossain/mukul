@@ -79,25 +79,27 @@ export const Blogs = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 1.5, ease: "easeIn" }}
-            className="flex flex-col items-start space-y-[25px] bg-slate-50 shadow-black drop-shadow-[10px] mx-auto p-[25px] border-[1px] border-slate-100 rounded-[20px] w-[360px] md:w-[400px] h-[460px] text-center hover:scale-105 transition-all duration-500 ease-in"
+            className="flex flex-col items-start space-y-[25px] bg-slate-50 shadow-black drop-shadow-[10px] mx-auto p-[25px] border-[1px] border-slate-100 rounded-[20px] w-[360px] md:w-[400px] h-[460px] md:h-[350px] lg:h-[460px] text-center hover:scale-105 transition-all duration-500 ease-in"
           >
-            <div className="space-y-[10px] min-h-[345px]">
+            <div className="space-y-[10px] min-h-[345px] md:min-h-[250px] lg:min-h-[345px]">
               <Image
                 src={member.src}
                 alt={member.title}
                 width={290}
                 height={330}
-                className="border-2 border-primary rounded-[20px] w-[340px] h-[255px] object-cover"
+                className="border-2 border-primary rounded-[20px] w-[340px] h-[255px] md:h-[150px] lg:h-[255px] object-cover"
               />
-              <h5 className="font-bold text-[18px] text-black text-left">
+              <h5 className="font-bold text-[18px] text-black md:text-[14px] lg:text-[18px] text-left">
                 {member.title}
               </h5>
             </div>
             <div className="flex flex-row justify-between items-center py-[15px] border-slate-100 border-t-1 w-full">
-              <h5 className="font-semibold text-md">{member.date}</h5>
+              <h5 className="font-semibold text-md md:text-[12px] lg:text-md">
+                {member.date}
+              </h5>
               <Link
                 href={"#"}
-                className="flex flex-row justify-between items-center gap-[5px] font-bold text-md text-primary"
+                className="flex flex-row justify-between items-center gap-[5px] font-bold text-md text-primary md:text-[12px] lg:text-md"
               >
                 Read More <FaArrowRight />
               </Link>

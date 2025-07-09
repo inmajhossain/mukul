@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import { FaArrowRight, FaBars } from "react-icons/fa6";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -30,9 +31,16 @@ const Header: React.FC = () => {
     <header className="relative flex justify-between items-center bg-white w-full h-[64px]">
       <div className="flex flex-row justify-between items-center backdrop-blur-3xl w-full container-new">
         {/* Name */}
-        <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
+        {/* <h3 className="font-lobster font-semi-bold text-primary hover:text-black transition-all duration-100 ease-in-out">
           Mukul Ahmed
-        </h3>
+        </h3> */}
+        <Image
+          src={"/images/logo.jpeg"}
+          alt="Logo"
+          width={200}
+          height={30}
+          className="bg-cover p-[5px] w-[200px] h-[30px] object-cover"
+        />
         {/* <h3
           className="bg-clip-text font-lobster font-semibold text-[24px] text-transparent"
           style={{
